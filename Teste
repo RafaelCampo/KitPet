@@ -9,12 +9,33 @@ public class Teste {
 		Scanner input = new Scanner(System.in);
 		KitPet pet = new KitPet();
 		
-		for(int i=1;i<pet.vacinas.length;i++){
-			System.out.println("Entre com o nome da vacina "+i );
-			pet.vacinas[i] = input.next();
+		System.out.println("Escreva o nome do animal: ");
+		pet.nomeAnimal = input.nextLine();
+		
+		System.out.println("Escreva a raça do animal: ");
+		pet.raçaAnimal = input.nextLine();
+		
+		System.out.println("Escreva a data da última visita ao veterinário: ");
+		pet.ultimaIdaVet = input.nextLine();
+		
+		System.out.println("Escreva a idade do animal em anos: ");
+		pet.idadeAnimal = input.nextDouble();
+		
+		
+		
+		pet.mostrarInfo();
+		
+		
+		for(int i=1;i<pet.profilaxia.length;i++){
+			System.out.println("Profilaxia número "+i );
+			pet.profilaxia[i] = input.next();
 			
 				}
-
+		
+		for(int i=1;i<pet.profilaxia.length;i++){
+		
+		System.out.println(pet.profilaxia[i]);
+		}
+	
 	}
-
-}
+	}
