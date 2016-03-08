@@ -2,7 +2,7 @@ package Kitpet;
 
 public class KitPet {
 	
-	String [] vacinas = new String[6];
+	String [] profilaxia = new String[6];
 	String ultimaIdaVet;
 	String proximaIdaVet;
 	String nomeAnimal;
@@ -15,10 +15,9 @@ public class KitPet {
 		System.out.println("Raça do animal: "+raçaAnimal);
 		System.out.println("Idade  do animal: "+idadeAnimal);
 		System.out.println("Última ida ao veterinário: "+ultimaIdaVet);
-		System.out.println("Próxima ida ao veterinário: "+proximaIdaVet);
-		
 		
 	}
 	
 
 }
+
