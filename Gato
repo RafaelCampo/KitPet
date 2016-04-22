@@ -1,0 +1,8 @@
+package Kitpet;
+
+public class Gato extends Animal {
+	
+	String [] vacinas = new String[4];
+	
+	
+}
