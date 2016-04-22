@@ -11,7 +11,11 @@ public class Teste {
 		input = new Scanner(System.in);
 		
 		Animal animal = new Animal();
+		DonodoAnimal dono = new DonodoAnimal();
+		Cao cao = new Cao();
+		Gato gato = new Gato();
 		
+		//Receber informações do animal
 		System.out.println("Escreva o nome do animal: ");
 		animal.nomeAnimal = input.nextLine();
 		
@@ -24,26 +28,59 @@ public class Teste {
 		System.out.println("Escreva a idade do animal em anos: ");
 		animal.idadeAnimal = input.nextLine();
 		
+		//Receber informações do dono do animal
 		
+		System.out.println("Nome do dono do animal: ");
+		dono.nome = input.nextLine();
+		System.out.println("Endereço do dono do animal: ");
+		dono.endereco = input.nextLine();
+		System.out.println("Telefone do dono do animal: ");
+		dono.telefone = input.nextLine();
+		System.out.println("CPF do dono do animal: ");
+		dono.cpf = input.nextLine();
+		System.out.println("Telefone celular do dono do animal: ");
+		dono.telefoneCelular = input.nextLine();
+		
+		
+		//Chamar métodos de mostrar info
 		
 		animal.mostrarInfo();
+		System.out.println("\n");
+		dono.mostrarInformaç();
 		
-		
-		for(int i=1;i<animal.profilaxia.length;i++){
-			System.out.println("Profilaxia número "+i );
-			animal.profilaxia[i] = input.next();
+		/*Medidas profiláticas que os animais devem
+		 * seguir como: vacinas, vermífugo, tosa.
+		 */
+		System.out.println("Digite as últimas vacinas tomadas pelo seu cão:");
+		for(int i=1;i<cao.vacinas.length;i++){
+			System.out.println("Vacina número "+i );
+			cao.vacinas[i] = input.next();
 			
 				}
 		
-		System.out.println("As medidas profiláticas são: ");
-		for(int i=1;i<animal.profilaxia.length;i++){
+		System.out.println("As vacinas tomadas foram: ");
+		for(int i=1;i<cao.vacinas.length;i++){
 		
-		System.out.println(animal.profilaxia[i]);
+		System.out.println(cao.vacinas[i]);
 		}
 		
+		System.out.println("Digite as últimas vacinas tomadas pelo seu gato:");
+		for(int i=1;i<gato.vacinas.length;i++){
+			System.out.println("Vacina número "+i );
+			gato.vacinas[i] = input.next();
+			
+				}
+		
+		System.out.println("As vacinas tomadas foram: ");
+		for(int i=1;i<gato.vacinas.length;i++){
+		
+		System.out.println(gato.vacinas[i]);
+		}
 		
 	}
 	}
+
+	
 
 
 		
