@@ -7,18 +7,6 @@ public class DonodoAnimal extends Pessoa {
 	private String tipoSanguineo;
 	
 	
-	public double getFaixaSalarial() {
-		return faixaSalarial;
-	}
-	public void setFaixaSalarial(double faixaSalarial) {
-		this.faixaSalarial = faixaSalarial;
-	}
-	public String getTipoSanguineo() {
-		return tipoSanguineo;
-	}
-	public void setTipoSanguineo(String tipoSanguineo) {
-		this.tipoSanguineo = tipoSanguineo;
-	}
-	
+
 
 }
