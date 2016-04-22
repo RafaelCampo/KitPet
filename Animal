@@ -4,12 +4,16 @@ public class Animal {
 	
 	 
 
-	 String [] profilaxia = new String[6];
+	 
 	 String ultimaIdaVet;
 	 String proximaIdaVet;
 	 String nomeAnimal;
 	 String raçaAnimal;
 	 String idadeAnimal;
+	
+	
+
+	
 
 
 
