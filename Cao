@@ -1,0 +1,11 @@
+package Kitpet;
+
+
+
+public class  Cao extends Animal {
+	
+	
+	String [] vacinas = new String[5];
+	
+	
+}
