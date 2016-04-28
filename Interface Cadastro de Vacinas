@@ -1,0 +1,208 @@
+package Telas;
+
+public class CadastroVacinas extends javax.swing.JFrame {
+
+    public CadastroVacinas() {
+        initComponents();
+    }
+
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        NomeTela = new javax.swing.JLabel();
+        Vacina1 = new javax.swing.JLabel();
+        CampoVacina1 = new javax.swing.JTextField();
+        Vacina2 = new javax.swing.JLabel();
+        CampoVacina2 = new javax.swing.JTextField();
+        Vacina3 = new javax.swing.JLabel();
+        CaixaVacina = new javax.swing.JComboBox<>();
+        CaixaVacina2 = new javax.swing.JComboBox<>();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        ListaVacina = new javax.swing.JList<>();
+        Avançar = new javax.swing.JButton();
+        Voltar = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        NomeTela.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        NomeTela.setText("Cadastro de Vacinas");
+
+        Vacina1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Vacina1.setText("Vacina 01");
+
+        CampoVacina1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        CampoVacina1.setForeground(java.awt.Color.lightGray);
+        CampoVacina1.setText("Vermífugo");
+        CampoVacina1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CampoVacina1ActionPerformed(evt);
+            }
+        });
+
+        Vacina2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Vacina2.setText("Vacina 02");
+
+        CampoVacina2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        CampoVacina2.setForeground(java.awt.Color.lightGray);
+        CampoVacina2.setText("Anti-Pulgas");
+        CampoVacina2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CampoVacina2ActionPerformed(evt);
+            }
+        });
+
+        Vacina3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Vacina3.setText("Vacina 03");
+
+        CaixaVacina.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vermífugo", "Anti-Pulgas", "Anti-Rábica" }));
+        CaixaVacina.setSelectedItem(CaixaVacina);
+        CaixaVacina.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CaixaVacinaActionPerformed(evt);
+            }
+        });
+
+        CaixaVacina2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vermífugo", "Anti-Pulgas", "Anti-Rábica" }));
+        CaixaVacina2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CaixaVacina2ActionPerformed(evt);
+            }
+        });
+
+        ListaVacina.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Vermífugo", "Anti-Pulgas", "Anti-Rábica" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(ListaVacina);
+
+        Avançar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Avançar.setIcon(new javax.swing.ImageIcon("D:\\Meus documentos\\Downloads\\270416131340_16.png")); // NOI18N
+        Avançar.setText("Avançar");
+        Avançar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AvançarActionPerformed(evt);
+            }
+        });
+
+        Voltar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Voltar.setIcon(new javax.swing.ImageIcon("D:\\Meus documentos\\Downloads\\270416131400_16.png")); // NOI18N
+        Voltar.setText("Voltar");
+        Voltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VoltarActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Vacina1)
+                .addGap(18, 18, 18)
+                .addComponent(CampoVacina1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addComponent(CaixaVacina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(Vacina2)
+                        .addGap(18, 18, 18))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Vacina3)
+                        .addGap(18, 18, 18)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jScrollPane1)
+                    .addComponent(CampoVacina2, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE))
+                .addGap(33, 33, 33)
+                .addComponent(CaixaVacina2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(66, 66, 66)
+                .addComponent(NomeTela))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Avançar)
+                .addGap(53, 53, 53)
+                .addComponent(Voltar))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(NomeTela)
+                .addGap(32, 32, 32)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Vacina1)
+                    .addComponent(CampoVacina1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CaixaVacina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(29, 29, 29)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CaixaVacina2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Vacina2)
+                    .addComponent(CampoVacina2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(29, 29, 29)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Vacina3))
+                .addGap(69, 69, 69)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Avançar)
+                    .addComponent(Voltar))
+                .addGap(0, 83, Short.MAX_VALUE))
+        );
+
+        pack();
+    }// </editor-fold>                        
+
+    private void AvançarActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        Despedida frame = new Despedida();  
+      
+    frame.setVisible(true); 
+    }                                       
+
+    private void CampoVacina1ActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        // TODO add your handling code here:
+    }                                            
+
+    private void CaixaVacinaActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        // TODO add your handling code here:
+    }                                           
+
+    private void CampoVacina2ActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        // TODO add your handling code here:
+    }                                            
+
+    private void CaixaVacina2ActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        // TODO add your handling code here:
+    }                                            
+
+    private void VoltarActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+    }                                      
+
+    
+    public static void main(String args[]) {
+        
+        java.awt.EventQueue.invokeLater(() -> {
+            new CadastroVacinas().setVisible(true);
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JButton Avançar;
+    private javax.swing.JComboBox<String> CaixaVacina;
+    private javax.swing.JComboBox<String> CaixaVacina2;
+    private javax.swing.JTextField CampoVacina1;
+    private javax.swing.JTextField CampoVacina2;
+    private javax.swing.JList<String> ListaVacina;
+    private javax.swing.JLabel NomeTela;
+    private javax.swing.JLabel Vacina1;
+    private javax.swing.JLabel Vacina2;
+    private javax.swing.JLabel Vacina3;
+    private javax.swing.JButton Voltar;
+    private javax.swing.JScrollPane jScrollPane1;
+    // End of variables declaration                   
+}
