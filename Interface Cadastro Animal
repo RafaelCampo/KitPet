@@ -1,0 +1,313 @@
+package Telas;
+
+
+public class CadastroAnimal extends javax.swing.JFrame {
+
+   
+    public CadastroAnimal() {
+        initComponents();
+    }
+
+   
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        NomeTela = new javax.swing.JLabel();
+        Nome = new javax.swing.JLabel();
+        CampoNome = new javax.swing.JTextField();
+        Usuario = new javax.swing.JLabel();
+        CampoUsuario = new javax.swing.JTextField();
+        CampoSobrenome = new javax.swing.JTextField();
+        Senha = new javax.swing.JLabel();
+        CampoSenha = new javax.swing.JPasswordField();
+        Email = new javax.swing.JLabel();
+        CampoEmail = new javax.swing.JTextField();
+        NomePet = new javax.swing.JLabel();
+        CampoNomePet = new javax.swing.JTextField();
+        Idade = new javax.swing.JLabel();
+        CampoIdade = new javax.swing.JTextField();
+        Raça = new javax.swing.JLabel();
+        CampoRaça = new javax.swing.JTextField();
+        CaixaRaça = new javax.swing.JComboBox<>();
+        Avançar = new javax.swing.JButton();
+        Voltar = new javax.swing.JButton();
+        Limpar = new javax.swing.JButton();
+        Tipo = new javax.swing.JLabel();
+        CampoTipo = new javax.swing.JTextField();
+        CaixaTipo = new javax.swing.JComboBox<>();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+
+        NomeTela.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        NomeTela.setText("Cadastro");
+
+        Nome.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Nome.setText("Nome");
+
+        CampoNome.setForeground(java.awt.Color.lightGray);
+        CampoNome.setText("Nome");
+
+        Usuario.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Usuario.setText("Usuario");
+
+        CampoUsuario.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        CampoUsuario.setForeground(java.awt.Color.lightGray);
+        CampoUsuario.setText("Nome de Usuario");
+        CampoUsuario.setToolTipText("");
+        CampoUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CampoUsuarioActionPerformed(evt);
+            }
+        });
+
+        CampoSobrenome.setForeground(java.awt.Color.lightGray);
+        CampoSobrenome.setText("Sobrenome");
+
+        Senha.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Senha.setText("Senha");
+
+        CampoSenha.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        CampoSenha.setForeground(java.awt.Color.lightGray);
+        CampoSenha.setText("Senha");
+
+        Email.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Email.setText("Email");
+
+        CampoEmail.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        CampoEmail.setForeground(java.awt.Color.lightGray);
+        CampoEmail.setText("Email@algo.com");
+
+        NomePet.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        NomePet.setText("Nome do Pet");
+
+        CampoNomePet.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CampoNomePetActionPerformed(evt);
+            }
+        });
+
+        Idade.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Idade.setText("Idade");
+
+        CampoIdade.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CampoIdadeActionPerformed(evt);
+            }
+        });
+
+        Raça.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Raça.setText("Raça");
+
+        CaixaRaça.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        Avançar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        Avançar.setIcon(new javax.swing.ImageIcon("D:\\Meus documentos\\Downloads\\270416131340_16.png")); // NOI18N
+        Avançar.setText("Avançar");
+        Avançar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AvançarActionPerformed(evt);
+            }
+        });
+
+        Voltar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        Voltar.setIcon(new javax.swing.ImageIcon("D:\\Meus documentos\\Downloads\\270416131400_16.png")); // NOI18N
+        Voltar.setText("Voltar");
+        Voltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VoltarActionPerformed(evt);
+            }
+        });
+
+        Limpar.setIcon(new javax.swing.ImageIcon("D:\\Meus documentos\\Downloads\\270416130219_16.png")); // NOI18N
+        Limpar.setText("Limpar");
+
+        Tipo.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        Tipo.setText("Tipo");
+
+        CampoTipo.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        CampoTipo.setForeground(java.awt.Color.lightGray);
+        CampoTipo.setText("Dizer se é cão ou gato");
+
+        CaixaTipo.setMaximumRowCount(4);
+        CaixaTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Cão", "Gato" }));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(Senha)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(CampoSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                    .addComponent(Usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(CampoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(Email, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(CampoEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(NomePet)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(CampoNomePet, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(Nome, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(CampoNome, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(CampoSobrenome, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Avançar)
+                        .addGap(35, 35, 35)
+                        .addComponent(Voltar)
+                        .addGap(33, 33, 33)
+                        .addComponent(Limpar))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Raça)
+                        .addGap(18, 18, 18)
+                        .addComponent(CampoRaça, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(CaixaRaça, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Idade, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(CampoIdade, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Tipo)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(CampoTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(CaixaTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(99, 99, 99)
+                        .addComponent(NomeTela, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(7, 7, 7)
+                .addComponent(NomeTela, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nome)
+                            .addComponent(CampoNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CampoSobrenome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Usuario)
+                            .addComponent(CampoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Senha)
+                            .addComponent(CampoSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Email)
+                            .addComponent(CampoEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(38, 38, 38)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(NomePet)
+                            .addComponent(CampoNomePet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Tipo)
+                            .addComponent(CampoTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CaixaTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(33, 33, 33)
+                        .addComponent(Idade))
+                    .addComponent(CampoIdade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Raça)
+                    .addComponent(CampoRaça, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CaixaRaça, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(51, 51, 51)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Avançar)
+                    .addComponent(Voltar)
+                    .addComponent(Limpar))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        pack();
+    }// </editor-fold>                        
+
+    private void CampoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        // TODO add your handling code here:
+    }                                            
+
+    private void CampoNomePetActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        // TODO add your handling code here:
+    }                                            
+
+    private void CampoIdadeActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+    }                                          
+
+    private void AvançarActionPerformed(java.awt.event.ActionEvent evt) {                                        
+            CadastroVacinas frame = new CadastroVacinas();  
+      
+    frame.setVisible(true);  
+    }                                       
+
+    private void VoltarActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        this.dispose();
+new TelaLogin().setVisible(true);
+    }                                      
+
+    
+    public static void main(String args[]) {
+        
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new CadastroAnimal().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JButton Avançar;
+    private javax.swing.JComboBox<String> CaixaRaça;
+    private javax.swing.JComboBox<String> CaixaTipo;
+    private javax.swing.JTextField CampoEmail;
+    private javax.swing.JTextField CampoIdade;
+    private javax.swing.JTextField CampoNome;
+    private javax.swing.JTextField CampoNomePet;
+    private javax.swing.JTextField CampoRaça;
+    private javax.swing.JPasswordField CampoSenha;
+    private javax.swing.JTextField CampoSobrenome;
+    private javax.swing.JTextField CampoTipo;
+    private javax.swing.JTextField CampoUsuario;
+    private javax.swing.JLabel Email;
+    private javax.swing.JLabel Idade;
+    private javax.swing.JButton Limpar;
+    private javax.swing.JLabel Nome;
+    private javax.swing.JLabel NomePet;
+    private javax.swing.JLabel NomeTela;
+    private javax.swing.JLabel Raça;
+    private javax.swing.JLabel Senha;
+    private javax.swing.JLabel Tipo;
+    private javax.swing.JLabel Usuario;
+    private javax.swing.JButton Voltar;
+    // End of variables declaration                   
+
+    void setVisible(Object object) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}
