@@ -1,0 +1,111 @@
+package Telas;
+
+public class Despedida extends javax.swing.JFrame {
+
+    public Despedida() {
+        initComponents();
+    }
+
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        NomeTela = new javax.swing.JLabel();
+        Agradecimento1 = new javax.swing.JLabel();
+        Finalizar = new javax.swing.JButton();
+        Voltar = new javax.swing.JButton();
+        Agradecimento2 = new javax.swing.JLabel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+
+        NomeTela.setFont(new java.awt.Font("Sylfaen", 0, 24)); // NOI18N
+        NomeTela.setText("Tela de Encerramento");
+
+        Agradecimento1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        Agradecimento1.setText("O Seu Cadastro Foi Realizado Com Sucesso");
+
+        Finalizar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Finalizar.setIcon(new javax.swing.ImageIcon("D:\\Meus documentos\\Downloads\\270416130259_16.png")); // NOI18N
+        Finalizar.setText("Finalizar");
+        Finalizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FinalizarActionPerformed(evt);
+            }
+        });
+
+        Voltar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Voltar.setIcon(new javax.swing.ImageIcon("D:\\Meus documentos\\Downloads\\270416131400_16.png")); // NOI18N
+        Voltar.setText("Voltar");
+        Voltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VoltarActionPerformed(evt);
+            }
+        });
+
+        Agradecimento2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        Agradecimento2.setText("Obrigado ");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(59, 59, 59)
+                        .addComponent(NomeTela))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Agradecimento1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Voltar)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(Finalizar)
+                                .addComponent(Agradecimento2)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(NomeTela)
+                .addGap(46, 46, 46)
+                .addComponent(Agradecimento1)
+                .addGap(30, 30, 30)
+                .addComponent(Agradecimento2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addComponent(Finalizar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Voltar)
+                .addGap(172, 172, 172))
+        );
+
+        pack();
+    }// </editor-fold>                        
+
+    private void FinalizarActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        System.exit(0); 
+    }                                         
+
+    private void VoltarActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        System.exit(0);
+    }                                      
+
+    
+    public static void main(String args[]) {
+        
+        java.awt.EventQueue.invokeLater(() -> {
+            new Despedida().setVisible(true);
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JLabel Agradecimento1;
+    private javax.swing.JLabel Agradecimento2;
+    private javax.swing.JButton Finalizar;
+    private javax.swing.JLabel NomeTela;
+    private javax.swing.JButton Voltar;
+    // End of variables declaration                   
+}
